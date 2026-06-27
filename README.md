@@ -1,5 +1,3 @@
-<img width=275 align="right" src="./imgs/screenshot.png">
-
 # Obsidian TikZJax
 
 > [!NOTE]
@@ -22,6 +20,8 @@
 A plugin for Obsidian that lets you render LaTeX and TikZ diagrams in your notes.
 
 You can render graphs, figures, circuits, chemical diagrams, commutative diagrams, and more.
+
+<img width=275 align="right" src="./imgs/screenshot.png">
 
 The following packages are available in `\usepackage{}`:
 - chemfig
