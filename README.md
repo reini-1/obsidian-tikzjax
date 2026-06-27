@@ -17,11 +17,11 @@
 > - **Platform-independent builds** — works on Windows, Linux, and macOS (including GitHub Actions).
 > - **Updated TypeScript configuration** — ES2021 target with modern module resolution.
 
+<img width=275 align="right" src="./imgs/screenshot.png">
+
 A plugin for Obsidian that lets you render LaTeX and TikZ diagrams in your notes.
 
 You can render graphs, figures, circuits, chemical diagrams, commutative diagrams, and more.
-
-<img width=275 align="right" src="./imgs/screenshot.png">
 
 The following packages are available in `\usepackage{}`:
 - chemfig
