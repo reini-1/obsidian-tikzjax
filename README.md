@@ -2,6 +2,23 @@
 
 # Obsidian TikZJax
 
+> [!NOTE]
+> **This is a fork** with significant updates and improvements over the original by **[@artisticat1](https://github.com/artisticat1)**:
+>
+>  🔄 Engine & Package Updates
+> - **Updates from [@flksgrd](https://github.com/flksgrd/obsidian-tikzjax)**
+>   - TikZJax engine — includes all recent fixes and improvements from the active fork
+>   - CircuiTikZ `0.9.x` → `1.8.6` — rebuilt on a TeX Live 2023 core (pgf/TikZ 3.1.10, with updated pgfplots and TikZ libraries). Adds ~74 components, including IC/DIP/QFP chips, > > multiplexers, flip-flops and seven-segment displays.
+>   - PDF export now renders TikZ correctly (diagrams are properly injected into export/print documents).
+>   - Dark mode colour-mapping now covers more SVG encodings (6-digit hex and `rgb()`).
+> - **Updated all Node.js dependencies** — modern toolchain with esbuild, TypeScript 5.7+, and ESLint 9.
+>
+> 🛠️ Build System & Tooling
+> - **Modernized build pipeline** — automatic download of the latest TikZJax engine during build with multiple fallbacks (flksgrd → drgrice1 → artisticat).
+> - **Node.js 24 support** — fully compatible with the latest Node.js runtime.
+> - **Platform-independent builds** — works on Windows, Linux, and macOS (including GitHub Actions).
+> - **Updated TypeScript configuration** — ES2021 target with modern module resolution.
+
 A plugin for Obsidian that lets you render LaTeX and TikZ diagrams in your notes.
 
 You can render graphs, figures, circuits, chemical diagrams, commutative diagrams, and more.
@@ -17,6 +34,24 @@ The following packages are available in `\usepackage{}`:
 - amsfonts
 - amssymb
 - tikz-3dplot
+
+## Installation
+
+This fork is not in Obsidian's Community Plugins list, so install it from this repo's [releases](https://github.com/flksgrd/obsidian-tikzjax/releases).
+
+### Via BRAT (recommended — auto-updates)
+1. Install **BRAT**: Settings → Community plugins → Browse → search "BRAT" → Install & Enable.
+2. Open the command palette and run **BRAT: Add a beta plugin for testing**.
+3. Enter `reini-1/obsidian-tikzjax` and confirm — BRAT installs the latest release and keeps it up to date.
+4. Enable **TikZJax** under Settings → Community plugins.
+
+### Manual
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/flksgrd/obsidian-tikzjax/releases/latest).
+2. Place them in `<vault>/.obsidian/plugins/obsidian-tikzjax/`.
+3. Reload Obsidian and enable **TikZJax** under Settings → Community plugins.
+
+> [!TIP]
+> The bundled `main.js` is ~11 MB (it inlines the full TeX/WASM engine), so the **first** diagram after enabling renders slowly; the rest are fast.
 
 ## Usage
 Content inside of `tikz` code blocks will be rendered by TikZJax.

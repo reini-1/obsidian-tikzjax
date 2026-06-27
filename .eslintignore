@@ -1,2 +1,17 @@
-npm node_modules
-build
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Compiled files
+*.js
+*.d.ts
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

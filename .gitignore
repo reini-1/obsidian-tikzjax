@@ -1,12 +1,16 @@
 # vscode
-.vscode 
+.vscode
 
 # Intellij
 *.iml
 .idea
 
 # npm
-node_modules
+node_modules/
+
+# build
+build/
+dist/
 
 # Don't include the compiled main.js file in the repo.
 # They should be uploaded to GitHub releases instead.
@@ -20,3 +24,13 @@ data.json
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TikZJax files (we copy them from node_modules)
+# tikzjax.js
+# tex.wasm.gz
+# core.dump.gz
